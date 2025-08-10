@@ -128,7 +128,7 @@ hr {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("image/Texturelabs_Atmosphere_142S.jpg") repeat;
+    background: url("image/Texturelabs_Atmosphere_142S.jpg") repeat right;
     background-size: cover;
     opacity: 0.3;
     animation: smokeWave 8s ease-in-out infinite, smokeRise 25s linear infinite;
@@ -204,6 +204,20 @@ hr {
 .btn:hover {
     background: rgb(131, 22, 22);
     border-color: rgb(131, 22, 22);
+}
+
+.spider {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 1150px;
+    height: 1150px;
+    background: url('image/spider_transparent.gif') no-repeat;
+    background-size: contain;
+    z-index: 15;
+    pointer-events: none;
+    transform-origin: right;
+    transition: top 1s linear, left 1s linear;
 }
 
 /*About*/
@@ -410,6 +424,7 @@ hr {
 .contact-form .btn {
     cursor: pointer;
 }
+
 .info-card a {
     color: white;
     text-decoration: none;

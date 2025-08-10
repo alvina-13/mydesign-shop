@@ -7,7 +7,6 @@ document.querySelectorAll(".add-to-cart").forEach((btn) => {
         let price = productCard.querySelector("span").textContent.trim();
         let img = productCard.querySelector("img").src;
 
-    
         cart.push({ name, price, img });
 
         alert(`${name} səbətə əlavə olundu!`);
@@ -31,3 +30,24 @@ if (cartIcon) {
         alert(cartList);
     });
 }
+
+
+const spider = document.querySelector(".spider");
+
+function moveSpider() {
+    const windowWidth = window.innerWidth - 1150;
+    const windowHeight = window.innerHeight - 1150;
+
+    const randomX = Math.floor(Math.random() * windowWidth);
+    const randomY = Math.floor(Math.random() * windowHeight);
+
+
+
+}
+
+
+setInterval(moveSpider, 2500);
+
+// İlk hərəkət
+moveSpider();
+
