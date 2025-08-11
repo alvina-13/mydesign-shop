@@ -3,37 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hero</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+    <div class="cart-menu hidden">
+    <h2>Səbət</h2>
+    <div class="cart-items"></div>
+    <button class="close-cart">Bağla</button>
+</div>
     <!-- Navbar -->
     <header>
         <div class="logo"><span>ALVINA.</span>Design</div>
         <nav>
-            <a href="hero.html">Əsas səhifə</a>
+            <a href="/index.html">Əsas səhifə</a>
             <a href="shop.html">Mağaza</a>
             <a href="about.html">Haqqımızda</a>
             <a href="services.html">Xidmətlər</a>
             <a href="contact.html">Əlaqə</a>
         </nav>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+        </div>
     </header>
     <hr>
 
-    <!-- Hero -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Stilini yarat, fərqini göstər!</h1>
-            <p>Qaranlıq və şık dizaynlı məhsullar ALVINA.Design-də səni gözləyir.</p>
-            <a href="shop.html" class="btn">Mağazaya bax</a>
-        </div>
-         <div class="spider" aria-hidden="true"></div>
+    <!-- Product -->
+    <section class="products-section">
+        <h1>Məhsullar</h1>
+        <div class="products"></div>
     </section>
 
     <!-- FOOT -->
     <div class="smoke"></div>
 
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
